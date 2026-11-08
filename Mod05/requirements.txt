@@ -1,0 +1,26 @@
+# Ambiente para todos os exemplos do Cap. 5 (Python 3.10 ou superior).
+# Sugestão: python -m venv .venv  →  ative o ambiente  →  pip install -r requirements.txt
+
+# Base: Azure OpenAI, configuração e exibição
+openai>=2
+python-dotenv>=1.0
+pandas>=2.1
+numpy>=1.26
+matplotlib>=3.8
+tiktoken>=0.7
+pydantic>=2.7
+ipykernel>=6.29
+
+# tipos-de-rag e bases-vetoriais/01-ai-search (SDK GA, API 2026-04-01)
+azure-search-documents>=12.0.0,<13
+
+# tipos-de-rag/05-grafo
+networkx>=3.2
+
+# bases-vetoriais
+azure-cosmos>=4.17
+psycopg[binary]>=3.2
+pgvector>=0.5
+pyodbc>=5.1
+redis>=8.1
+pymongo>=4.8

@@ -1,0 +1,9 @@
+# Versões testadas em 2026-11-02. O MAF evolui rápido: fixe para a turma instalar o mesmo.
+agent-framework-core==1.24.0
+agent-framework-foundry==1.16.0
+agent-framework-devui==1.0.0b261030
+# mcp e tenacity são opcionais no core (extra "all"); o MCPStreamableHTTPTool precisa dos dois.
+mcp==2.3.0
+tenacity==9.1.4
+azure-identity==1.27.0
+python-dotenv==1.2.4

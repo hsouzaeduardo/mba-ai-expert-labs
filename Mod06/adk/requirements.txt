@@ -1,0 +1,4 @@
+# Versões testadas em 2026-11-02. Fixe para a turma instalar o mesmo.
+google-adk[mcp]==2.13.0
+mcp==2.3.0
+python-dotenv==1.2.4

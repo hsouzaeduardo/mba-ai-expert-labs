@@ -1,0 +1,13 @@
+# Configuração de HOMOLOGAÇÃO do servico-pagamentos.
+# O gateway de testes do banco parceiro é lento; por isso o timeout aqui é bem maior que o de produção.
+
+ambiente: homologacao
+
+gateway:
+  url: https://gateway-homologacao.example.com/v2
+  timeout_segundos: 30
+  pool_conexoes: 5
+
+lote:
+  horario: "10:00"
+  ordens_por_execucao: 50

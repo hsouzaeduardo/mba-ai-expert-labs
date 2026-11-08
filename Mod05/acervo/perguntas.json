@@ -1,0 +1,73 @@
+[
+  {
+    "id": "linguagem-natural",
+    "pergunta": "Como peço reembolso de uma viagem a trabalho?",
+    "categoria": "Pergunta em linguagem natural",
+    "o_que_o_slide_diz": "O vetor acerta: pergunta e trecho falam do mesmo assunto.",
+    "trechos_esperados": [["financeiro_reembolso-de-despesas-de-viagem_01"]]
+  },
+  {
+    "id": "parafrase",
+    "pergunta": "Como faço para encerrar o contrato de uma ferramenta que a equipe não usa mais?",
+    "categoria": "Sinônimo e paráfrase",
+    "o_que_o_slide_diz": "\"encerrar contrato\" encontra \"cancelar assinatura\".",
+    "trechos_esperados": [["juridico_cancelamento-de-assinaturas-de-software_03", "juridico_cancelamento-de-assinaturas-de-software_01"]]
+  },
+  {
+    "id": "assunto-certo",
+    "pergunta": "Quantos dias de férias eu posso vender?",
+    "categoria": "Assunto certo, palavras diferentes",
+    "o_que_o_slide_diz": "\"férias\" encontra \"descanso remunerado\".",
+    "trechos_esperados": [["rh_descanso-remunerado-anual_03"]]
+  },
+  {
+    "id": "codigo-de-norma",
+    "pergunta": "O que mudou na NR-12 rev. 3?",
+    "categoria": "Código de norma e versão",
+    "o_que_o_slide_diz": "\"NR-12 rev. 3\" devolve trecho da NR-10.",
+    "trechos_esperados": [["seguranca_procedimento-nr-12-rev3_01"]]
+  },
+  {
+    "id": "sigla-interna",
+    "pergunta": "Qual é o orçamento aprovado do projeto ATLAS?",
+    "categoria": "Sigla interna e nome próprio",
+    "o_que_o_slide_diz": "\"projeto ATLAS\" não tem sentido para o embedding.",
+    "trechos_esperados": [["projetos_projeto-atlas_02"]]
+  },
+  {
+    "id": "string-exata",
+    "pergunta": "Qual é o prazo de entrega do SKU 48213-B?",
+    "categoria": "Tudo que precisa bater a string",
+    "o_que_o_slide_diz": "\"SKU 48213-B\" e \"48213-C\" parecem iguais.",
+    "trechos_esperados": [["operacoes_catalogo-de-pecas-prensas_01"]]
+  },
+  {
+    "id": "reranking",
+    "pergunta": "Posso pedir reembolso da passagem do meu marido, que vai comigo numa viagem a trabalho?",
+    "categoria": "O trecho certo vinha em quinto lugar",
+    "o_que_o_slide_diz": "O semantic ranker lê pergunta e trecho juntos e reordena.",
+    "trechos_esperados": [["financeiro_reembolso-de-despesas-de-viagem_04"]]
+  },
+  {
+    "id": "pergunta-composta",
+    "pergunta": "Vou a Joinville fazer a manutenção preventiva da prensa P-400. Qual é o teto da diária de hotel e o que a NR-12 rev. 3 exige antes de eu abrir a proteção da máquina?",
+    "categoria": "Pergunta composta, fontes múltiplas",
+    "o_que_o_slide_diz": "Falha em pergunta que junta dois assuntos ou exige mais de uma fonte.",
+    "trechos_esperados": [
+      ["financeiro_reembolso-de-despesas-de-viagem_02"],
+      ["seguranca_procedimento-nr-12-rev3_01", "seguranca_procedimento-nr-12-rev3_02"]
+    ]
+  },
+  {
+    "id": "multissalto",
+    "pergunta": "A suspensão da Rolamentos Alfa coloca algum projeto da empresa em risco?",
+    "categoria": "Ligar fatos de documentos diferentes",
+    "o_que_o_slide_diz": "Falha em pergunta que exige ligar fatos de documentos diferentes.",
+    "trechos_esperados": [
+      ["compras_comunicado-suspensao-rolamentos-alfa_01"],
+      ["compras_fornecedores-homologados_01"],
+      ["operacoes_plano-de-manutencao-preventiva_01"],
+      ["projetos_projeto-atlas_03"]
+    ]
+  }
+]

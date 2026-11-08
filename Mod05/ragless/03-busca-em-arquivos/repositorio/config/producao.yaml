@@ -1,0 +1,13 @@
+# Configuração de PRODUÇÃO do servico-pagamentos.
+# Mudanças neste arquivo passam por revisão do time de Pagamentos.
+
+ambiente: producao
+
+gateway:
+  url: https://gateway.example.com/v2
+  timeout_segundos: 8  # ADR-007: acima de 10 s, só com aprovação da Arquitetura
+  pool_conexoes: 20
+
+lote:
+  horario: "02:00"
+  ordens_por_execucao: 500

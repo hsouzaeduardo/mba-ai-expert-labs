@@ -1,0 +1,37 @@
+{
+  "versao": "1.0.0",
+  "responsavel_operacional": "A DEFINIR (slide 11: nenhum agente entra em produção sem um nome aqui)",
+  "mcp_url": "https://014-mcp-server.azurewebsites.net/mcp/public/mcp",
+  "ferramentas": {
+    "search_jobs_semantic": {
+      "efeito": "leitura",
+      "exige_aprovacao": false,
+      "motivo": "Busca vagas públicas por texto livre. Não altera nada."
+    },
+    "list_jobs": {
+      "efeito": "leitura",
+      "exige_aprovacao": false,
+      "motivo": "Lista vagas públicas com filtros. Não altera nada."
+    },
+    "get_job": {
+      "efeito": "leitura",
+      "exige_aprovacao": false,
+      "motivo": "Lê detalhes de uma vaga pública. Não altera nada."
+    },
+    "get_company_info": {
+      "efeito": "leitura",
+      "exige_aprovacao": false,
+      "motivo": "Lê nome e slug da empresa. Não altera nada."
+    },
+    "apply_to_job": {
+      "efeito": "irreversivel",
+      "exige_aprovacao": true,
+      "motivo": "Cria candidato real, envia e-mail e dispara entrevista por IA. Não há como desfazer."
+    }
+  },
+  "limites": {
+    "max_chamadas_modelo": 8,
+    "max_chamadas_ferramenta": 12,
+    "max_segundos": 300
+  }
+}
